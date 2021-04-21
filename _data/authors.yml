@@ -1,0 +1,19 @@
+- name: Tae Soo Kim
+  affiliation: KAIST
+  website: https://taesookim.com
+  img: taesoo.jpeg
+- name: Tesh Goyal
+  affiliation: Google
+  website: http://www.teshgoyal.info/
+  img: tesh.jpg
+- name: Jeongyeon Kim
+  affiliation: KAIST
+  img: jeongyeon.jpg
+- name: Juho Kim
+  affiliation: KAIST
+  website: https://juhokim.com
+  img: juho.jpg
+- name: Ray Hong
+  affiliation: GMU
+  website: http://rayhong.net/
+  img: ray.png

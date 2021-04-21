@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoSeq - CSCW 2021</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="shortcut icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <base target="_blank">
+  <body>
+    <div>
+      <div class="wrapper">
+        <h1>
+          
+          <span style="vertical-align:middle;"/>Supporting <b>Collaborative Sequencing</b> for Small Groups through <b>Visual Awareness</b></span>
+        </h1>
+        <div class="authors-wrapper">
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://taesookim.com">
+                  <img src="/assets/img/taesoo.jpeg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://taesookim.com">
+                Tae Soo Kim
+              </a>
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="http://www.teshgoyal.info/">
+                  <img src="/assets/img/tesh.jpg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="http://www.teshgoyal.info/">
+                Tesh Goyal
+              </a>
+            
+            </p>
+            <p>
+              Google
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <img src="/assets/img/jeongyeon.jpg"/>
+              
+            </div>
+            <p>
+            
+              Jeongyeon Kim
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://juhokim.com">
+                  <img src="/assets/img/juho.jpg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://juhokim.com">
+                Juho Kim
+              </a>
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="http://rayhong.net/">
+                  <img src="/assets/img/ray.png"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="http://rayhong.net/">
+                Ray Hong
+              </a>
+            
+            </p>
+            <p>
+              GMU
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <hr/>
+      
+      <div class="video-wrapper">
+        <iframe src="https://drive.google.com/file/d/1OMFKjMJq8Hp7gfftr0U9Zm1vzvePVBlo/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <hr/>
+      
+      <h2 id="abstract">Abstract</h2>
+
+<p><strong>Collaborative Sequencing (CoSeq)</strong> is the process by which a group collaboratively constructs a sequence. CoSeq is ubiquitous, occurring across diverse situations like trip planning, course scheduling, or book writing.Building a consensus on a sequence is desirable to groups, however, accomplishing this requires groups to dedicate significant effort to comprehensively discuss preferences and resolve conflicts. Furthermore, as numerous decisions must be assessed to construct a sequence, this challenge can be exacerbated in CoSeq. However, little research has aimed to effectively support consensus building in CoSeq. As a first step to systematically understand and support consensus building in CoSeq, we conducted a formative study to gain insights into how visual awareness may facilitate the holistic recognition of preferences and the resolution of conflicts within a group. From the study, we identified design requirements to support consensus building and designed a novel visual awareness technique for CoSeq. We instantiated this design in a collaborative travel itinerary planning system, <strong><em>Twine</em></strong>, and conducted a summative study to evaluate its effects. We found that visual awareness could decrease the effort of communicating preferences by 21%, and participants’ comments suggest that it also encouraged group members to behave more cooperatively when building a consensus.We discuss future research directions to further explore the needs and challenges in this unique context and advance the development of support for CoSeq tasks.</p>
+
+<hr />
+
+<h2 id="system">System</h2>
+
+<p><strong>Twine</strong> is a web-based travel planning system through which group members build consensus on a shared itinerary. By scaffolding the process into individual and collaborative stages, Twine aims to support a more efficient and effective consensus building process.</p>
+
+<p>In <strong>Twine</strong>, each member of the group is first sent to an individual screen on which they construct their individually preferred itinerary by adding and ordering items into a sequence.</p>
+
+<p><img src="/assets/img/individual.jpeg" alt="The individual screen in Twine" /></p>
+
+<p>After each member has submitted their sequence of preference, they all proceed to a shared collaborative screen.</p>
+
+<p><img src="/assets/img/collaborative.png" alt="The collaborative screen in Twine" /></p>
+
+<p>In this screen, group members can compare each other’s preferred sequences, discuss, and gradually modify their individual sequences to be in agreement.</p>
+
+<h2 id="visual-awareness-technique">Visual Awareness Technique</h2>
+
+<p>To facilitate the comparison of individual sequences, <strong>Twine</strong> also provides a novel visual awareness technique to facilitate the identification of agreements and disagreements in preferences.</p>
+
+<h3 id="1-color-coding-of-shared-nodes">(1) Color-coding of Shared Nodes</h3>
+
+<p class="text-left">To the right of each item in the user’s itinerary, the system shows colored stubs that represent which other users in the group have also selected that same item. In the example, <span style="color:#d37f14;font-weight:bold">Pittock Mansion</span> was also selected by the two other members but <span style="color:#d37f14; font-weight:bold">Pastini</span> was only selected by the <span style="color:#86b95b">green group member</span>.</p>
+
+<p class="img-right"><img src="/assets/img/color_coding.png" alt="Color-coding on Shared Nodes" /></p>
+
+<h3 id="2-ordering-details-on-hover">(2) Ordering Details on Hover</h3>
+
+<p class="text-left">By hovering over an item in their itinerary, the user can see how their group members’ itineraries differ in terms of the ordering of the items. Specifically, the user can see which other items their group members placed before and after the hovered-on item. In the example, the user hovers on <span style="color:#d37f14;font-weight:bold">Forest Park</span> and can see that <span style="color:#86b95b">“Frog”</span>, their group member, had the item represented by the pentagon before Forest Park.</p>
+
+<p class="img-right"><img src="/assets/img/ordering_details.png" alt="Ordering Details on Hover" /></p>
+
+<h3 id="3-list-of-missing-nodes">(3) List of Missing Nodes</h3>
+
+<p class="text-left">The <em>List of Missing Nodes</em> helps the user see which items they didn’t add to their itinerary, but their group members did. For example, <span style="color:#d37f14;font-weight:bold">Q Restaurant &amp; Bar</span> has both the <span style="color:#86b95b">green</span> and <span style="color:#474747">black</span> stubs filled which shows that both group members have that restaurant in their itineraries.</p>
+
+<p class="img-right"><img src="/assets/img/list_of_missing.png" alt="List of Missing Nodes" /></p>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<p>We conducted a within-subjects study in which 15 teams of three friends (N=45) reached a consensus on travel itineraries twice—once with <strong>Twine</strong> (VA) and once with a baseline that did not include the visual awareness technique (Control).</p>
+
+<p>Our findings revealed that the visual awareness technique significantly increased perceived efficiency and effectiveness of the consensus building process. Also, by coding all the message from the study, we found that group members expressed their own opinions and asked about each others’ less with the visual awareness technique.</p>
+
+<p class="results-img"><img src="/assets/img/results_gini.png" alt="Summary of main results." /></p>
+
+<p>Participants mentioned how <strong>Twine</strong> helped them externalize their cognition so they could more easily remember each other’s preferences and asked about these less. We also saw from participants’ responses that the visual awareness technique encouraged group members to adjust their own preferences to match their group members’.</p>
+
+<p class="center quote">G2P2: <em>“There was no need to remember in my head which [location] we all wanted to go to and which [location] only I wanted to go to.”</em></p>
+
+<p class="center quote">G13P3: <em>“Having a separate list for locations that I didn’t select but my members did allowed me to conveniently adjust my opinions to match my members’ opinions.”</em></p>
+
+<hr />
+
+<h2 id="cscw-2021-paper-camera-ready">CSCW 2021 Paper (Camera-ready)</h2>
+
+<p><a href="https://kixlab.github.io/website-files/2021/cscw2021-CoSeq-paper.pdf">Link to the PDF</a></p>
+
+<h2 id="bibtex">Bibtex</h2>
+<pre>
+TBD
+</pre>
+
+<hr />
+
+<p class="logos"><a href="https://kixlab.org"><img src="/assets/img/kixlab_logo.png" alt="Logo of KIXLAB" /></a>
+<a href="https://kaist.ac.kr"><img src="/assets/img/kaist_logo.png" alt="Logo of KAIST" /></a>
+<a href="https://jigsaw.google.com"><img src="/assets/img/jigsaw_logo.png" alt="Logo of Jigsaw" /></a>
+<a href="https://www2.gmu.edu"><img src="/assets/img/gmu_logo.svg" alt="Logo of George Mason University" /></a></p>
+
+<p class="center acknowledgement">This research was supported by the <a href="https://kaist.ac.kr">KAIST</a> UP Program.</p>
+
+
+    </div>
+    
+  </body>
+</html>
