@@ -78,7 +78,22 @@ G13P3: *"Having a separate list for locations that I didn’t select but my memb
 
 ## Bibtex
 <pre>
-TBD
+@article{10.1145/3449250,
+  author = {Kim, Tae Soo and Goyal, Nitesh and Kim, Jeongyeon and Kim, Juho and Hong, Sungsoo Ray},
+  title = {Supporting Collaborative Sequencing of Small Groups through Visual Awareness},
+  year = {2021},
+  issue_date = {April 2021},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {5},
+  number = {CSCW1},
+  url = {https://doi.org/10.1145/3449250},
+  doi = {10.1145/3449250},
+  month = apr,
+  articleno = {176},
+  numpages = {29},
+  keywords = {small group, consensus, collaborative sequencing, visual awareness, group communication, group awareness}
+}
 </pre>
 
 ------
