@@ -76,6 +76,8 @@ G13P3: *"Having a separate list for locations that I didn’t select but my memb
 
 [Link to the PDF][1]
 
+[ACM DL Link][2]
+
 ## Bibtex
 <pre>
 @article{10.1145/3449250,
@@ -109,3 +111,4 @@ This research was supported by the [KAIST](https://kaist.ac.kr) UP Program.
 
 
 [1]:https://kixlab.github.io/website-files/2021/cscw2021-CoSeq-paper.pdf
+[2]:https://dl.acm.org/doi/10.1145/3449250
